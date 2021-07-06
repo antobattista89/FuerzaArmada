@@ -64,31 +64,31 @@ public class TestCases {
 		
 		assertEquals((Integer)12, argentina.getCapacidadDeDefensa());
 	}
-//	
-//	@Test
-//	public void queSePuedaCrearUnaBatalla() {
-//		FuerzaArmada argentina = new FuerzaArmada();
-//		
-//		argentina.crearBatalla("San Lorenzo", TipoDeBatalla.TERRESTRE, 100.5, 20.3);
-//		
-//		assertEquals(100.5, argentina.getBatalla("San Lorenzo").getLatitud(),0.01);
-//		assertEquals(20.3, argentina.getBatalla("San Lorenzo").getLongitud(),0.01);
-//	}	
-//	
-//	@Test
-//	public void queSePuedaPresentarBatallaTerrestre() throws VehiculoInexistente, VehiculoIncompatible {
-//		FuerzaArmada argentina = new FuerzaArmada();
-//			
-//		argentina.agregarVehiculo(new Tanque(5, "Renault FT"));
-//		argentina.agregarVehiculo(new Camion(6, "T-72"));
-//		argentina.agregarVehiculo(new Camion(7, "T-72"));
-//		
-//		argentina.crearBatalla("San Lorenzo", TipoDeBatalla.TERRESTRE, 100.5, 20.3);
-//
-//		assertTrue(argentina.enviarALaBatalla("San Lorenzo", 5));
-//		assertTrue(argentina.enviarALaBatalla("San Lorenzo", 6));
-//		assertTrue(argentina.enviarALaBatalla("San Lorenzo", 7));		
-//	}
+	
+	@Test
+	public void queSePuedaCrearUnaBatalla() {
+		FuerzaArmada argentina = new FuerzaArmada();
+		
+		argentina.crearBatalla("San Lorenzo", TipoDeBatalla.TERRESTRE, 100.5, 20.3);
+		
+		assertEquals(100.5, argentina.getBatalla("San Lorenzo").getLatitud(),0.01);
+		assertEquals(20.3, argentina.getBatalla("San Lorenzo").getLongitud(),0.01);
+	}	
+	
+	@Test
+	public void queSePuedaPresentarBatallaTerrestre() throws VehiculoInexistente, VehiculoIncompatible {
+		FuerzaArmada argentina = new FuerzaArmada();
+			
+		argentina.agregarVehiculo(new Tanque(5, "Renault FT"));
+		argentina.agregarVehiculo(new Camion(6, "T-72"));
+		argentina.agregarVehiculo(new Camion(7, "T-72"));
+		
+		argentina.crearBatalla("San Lorenzo", TipoDeBatalla.TERRESTRE, 100.5, 20.3);
+
+		assertTrue(argentina.enviarALaBatalla("San Lorenzo", 5));
+		assertTrue(argentina.enviarALaBatalla("San Lorenzo", 6));
+		assertTrue(argentina.enviarALaBatalla("San Lorenzo", 7));		
+	}
 //
 //	@Test
 //	public void queSePuedaPresentarBatallaNaval() throws VehiculoInexistente, VehiculoIncompatible {

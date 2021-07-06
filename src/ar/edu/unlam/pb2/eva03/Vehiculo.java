@@ -41,7 +41,6 @@ public abstract class Vehiculo{
 			return true;
 		if (obj == null)
 			return false;
-
 		Vehiculo other = (Vehiculo) obj;
 		if (iD == null) {
 			if (other.iD != null)

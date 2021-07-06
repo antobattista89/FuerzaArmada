@@ -5,16 +5,29 @@ import java.util.Set;
 
 
 public class Batalla {
+	
+	private String nombre;
 	private Double latitud;
 	private Double longitud;
 	private TipoDeBatalla tipo;
 	Set<Vehiculo> vehiculosEnLaBatalla;
 	
 	public Batalla(Double latitud, Double longitud, TipoDeBatalla tipo) {
+		this.nombre=nombre;
 		this.latitud = latitud;
 		this.longitud = longitud;
 		this.tipo = tipo;
 		this.vehiculosEnLaBatalla = new HashSet<Vehiculo>();
+	}
+
+	
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
 
 	public Double getLatitud() {
@@ -40,6 +53,9 @@ public class Batalla {
 	public void setTipo(TipoDeBatalla tipo) {
 		this.tipo = tipo;
 	}
+
 	
+	}
 	
-}
+
+
